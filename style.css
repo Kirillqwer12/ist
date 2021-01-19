@@ -1,0 +1,191 @@
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;/* задаем шрифт остальному*/
+}
+
+.wrapper {/*Рабочее пространство*/
+    max-width: 1396px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Стиль хэддера*/
+
+header.top_header .wrapper {
+    align-items: center;
+    display: flex;
+    height: 90px;
+    justify-content: flex-start; /*выравниваем враппер*/
+
+}
+
+header.top_header{/*Цвет навигационной менюшки*/
+    background-color: #BDBCFF;
+}
+    
+
+header.top_header .wrapper nav.right_nav ul{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex; /* задаем шрифт шапке*/
+    color: #ffffff;
+}
+header.top_header .wrapper nav.logo ul{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    display: flex; /* задаем шрифт шапке*/
+    font-size: 36px;
+    color: #ffffff;
+}
+header.top_header .wrapper nav.right_nav ul{
+    margin-left: 840px; /*размещаем навигационные кнопки*/
+
+}  
+header.top_header .wrapper nav.right_nav ul li{
+    margin-left: 20px; /*отступы между кнопками*/
+
+}  
+
+header.top_header .wrapper nav.right_nav ul li a,
+header.top_header .wrapper nav.logo ul li a,
+.global ul li a
+{
+    color:inherit;
+    text-decoration: none; /*убираем декаратив и просмотр*/
+}
+
+
+/*banner*/
+.banner {
+    max-width: 1396px;/*размещаем гифку и задаем разрешения а так же растягиваем гифку*/
+    height: 947px;
+    margin: 0 auto;
+    background: url(images/animation1.gif) no-repeat;
+    background-size: 100% 100%
+
+}
+
+.banner p{/*расположение текста в банере*/
+    margin-top: 36px;
+    width: 100%;
+    text-align: center;
+    
+}
+.banner .text1{/*текст баннера в верху*/
+    color: #fff;
+    font-family: Roboto Slab;/*устанавливаем хар-ки шрифта*/
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 95px;
+}
+
+.banner .text2{   /*текст баннера в низу*/  
+    margin-top: 692px;
+    font-family: Roboto Slab;
+    font-style: normal;/*аналогично текст1*/
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 63px;
+    color: #fff;
+}
+
+
+/*выравниваем банер и центруем на размер экрана*/
+.banner .banner1{
+    margin-top: 36px;
+    width: 100%;
+    
+}
+
+.global {/*рабочая инфо поле с текстом*/
+    max-width: 1396px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.global .osn{ /*задаем меньший контейнер для текста на рабочем поле*/
+    max-width: 1042px;
+}
+
+.image1{/*настройки размещения картинок*/
+    max-width: 1042px;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+.global b{/*настройки жирного текста*/
+    font-weight: 500;
+}
+.global p{ /*настройки основного текста*/
+    margin-top: 48px;
+}
+
+.global h1{/*настройки заголовка*/
+    font-weight: 500;
+    margin-top: 56px;
+    font-size: 36px;
+}
+.global ul {/*отступы списков*/
+    margin-top: 32px;
+}
+.global ul li{/*отстпу между элементами списка*/
+    margin-top: 16px;
+}
+.global ul li.active{/*активная кнопка на переход*/
+    color:lightcoral;
+}
+
+
+.backfotter {/*настройки размещения футтера*/
+    margin-top: 48px;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 240px;
+}
+/*выравниваем картинку футтера на размер экрана*/
+.backfotter .fotter{
+    width: 100%;
+}
+
+
+
+header.top_header .wrapper nav.right_nav ul li a:hover,
+header.top_header .wrapper .logo ul li a:hover{
+    color: #3f82fd;
+    transition: all 50ms ease-in-out; /*ховер aka наведение эффект*/
+}
+
+.global .buttoms{ /*размещение в боди кнопок*/
+    margin-top: 56px;
+    text-align: center;
+    display: flex;
+}
+.global .buttoms .buttom img{/*размещение кнопок внутри контейнера используя эффект блюра в 5пкс*/
+    width: 334px;
+    height: 500px;
+    filter: blur(5px);
+    border-radius: 16px;
+    margin-right: 20px;
+}
+.global .buttoms .buttom:hover{/*изменение цвета ховер при наведении текст изменяет цвет*/
+    color: #3f82fd;
+    transition: all 50ms ease-in-out; /*ховер aka наведение эффект*/
+}
+.global .buttoms .buttom img:hover{/* при наведении на кнопку, ховер, блюр пропадает*/
+    filter: none;
+}
+
+.global ul li:hover{
+    color: #3f82fd;
+    transition: all 50ms ease-in-out; /*ховер aka наведение эффект*/
+}
